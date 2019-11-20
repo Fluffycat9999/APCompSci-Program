@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Bill Splitter</title>
+</head>
+<body>
+    <div class="banner">
+        <h1 class="header">
+            Bill Splitter
+        </h1>
+    </div>
+    <div class="user-input">
+        <form id="form">
+            <div class="bill-splitter-input">
+                <label for="total-bill">Total Bill</label>
+                <input type="text" id="total-bill" class="text-box">
+            </div>
+            <div class="bill-splitter-input-tip">
+                <label for="tip">Tip</label>
+                    <input type="radio" id="tip" name="choice" value="30%"> 30%
+                    <input type="radio" id="tip" name="choice" value="20%"> 20%
+                    <input type="radio" id="tip" name="choice" value="15%"> 15%
+                    <input type="radio" id="tip" name="choice" value="5%"> 5%
+                    <input type="text" id="tip" name="choice"> Other %
+            </div>
+            <div class="bill-splitter-input">
+                <label for="people">How many people are splitting the bill?</label>
+                <input type="text" id="people" class="text-box">
+            </div>
+            <div class="bill-splitter-input">
+                <input type="submit" value="Submit" class="btn btn-blue">
+            </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
