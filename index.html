@@ -15,19 +15,20 @@
     <div class="user-input">
         <form id="form">
             <div class="bill-splitter-input">
-                <label for="total-bill">Total Bill</label>
+                <label for="total-bill" class="text">Total Bill</label>
                 <input type="text" id="total-bill" class="text-box">
             </div>
             <div class="bill-splitter-input-tip">
-                <label for="tip">Tip</label>
-                    <input type="radio" id="tip" name="choice" value="30%"> 30%
-                    <input type="radio" id="tip" name="choice" value="20%"> 20%
-                    <input type="radio" id="tip" name="choice" value="15%"> 15%
-                    <input type="radio" id="tip" name="choice" value="5%"> 5%
-                    <input type="text" id="tip" name="choice"> Other %
+                <label for="tip" class="text">Tip
+                    <input type="radio" id="tip" name="choice" value="30%" class="text"> 30% 
+                    <input type="radio" id="tip" name="choice" value="20%" class="text"> 20%
+                    <input type="radio" id="tip" name="choice" value="15%" class="text"> 15%
+                    <input type="radio" id="tip" name="choice" value="5%" class="text"> 5%
+                    <input type="text" id="tip" name="choice" class="text text-box"> Other %
+                </label>
             </div>
             <div class="bill-splitter-input">
-                <label for="people">How many people are splitting the bill?</label>
+                <label for="people" class="text">How many people are splitting the bill?</label>
                 <input type="text" id="people" class="text-box">
             </div>
             <div class="bill-splitter-input">
@@ -35,6 +36,37 @@
             </div>
         </form>
     </div>
+    <div class="display">
+            <!-- <div class="display-bill">
+                <div class="display-total-bill">
+                    %totalbill%
+                </div>
+                <div class="display-tip-percent">
+                    %tippercent%
+                </div>
+        
+                <div class="display-people">
+                    %people%
+                </div>
+        
+                <div class="display-share-bill">
+                    %sharebill%
+                </div>
+        
+                <div class="display-share-tip">
+                    %sharetip%
+                </div>
+
+                <div class="display-share-total-bill">
+                    %sharetotalbill%
+                </div>
+                
+
+                <div class="remove-bill">
+                    <p class="remove-bill">Remove Bill &#10006;</p>
+                </div>
+            </div> -->
+        </div>
     <script src="app.js"></script>
 </body>
 </html>
