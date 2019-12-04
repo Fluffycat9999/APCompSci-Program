@@ -3,7 +3,8 @@ class bmi{
         this.weight = weight;
         this.height = height;
         this.getBMI = function(){
-        return /* 703 * */ weight / (height * height);
+        return Math.round((703 * weight.value / (height.value * height.value)) * 10 ) / 10;
+        this.
     }
 }
 }
@@ -14,13 +15,21 @@ console.log(Mine); */
 class UI{
     addBMIToList(bmi){
         const display = document.querySelector('.display');
-        let html = '<div class="display-bmi"> <div class="display-weight"> %weight% </div> <div class="display-height"> %height% </div><div class="display-result">%result%</div></div><div class="remove-bmi"> <p class="remove-bmi">Remove BMI &#10006;</p> </div> </div>'
+        let html = '<div class="display-bmi"> <div class="display-weight">Weight: %weight% </div> <div class="display-height">Height: %height% </div><div class="display-result">BMI: %result%</div></div><div class="category">You are %category%</div></div>'
         
-        const getBMI = weight.value / (height.value * height.value);        
+        const bmi = new BMI();
+        category {
+        if(getBMI > 18.5){
+            "Underweight"
+        }else{
+            "Obese"
+        }
+    }
 
         let newHtml= html.replace('%weight%', bmi.weight);
         newHtml = newHtml.replace('%height%', bmi.height);
-        newHtml = newHtml.replace('%result%', getBMI);
+        newHtml = newHtml.replace('%result%', BMI);
+        newHtml = newHtml.replace('%category%', category());
         display.insertAdjacentHTML('beforeend', newHtml);
 
     }
@@ -28,11 +37,11 @@ class UI{
         document.getElementById("weight").value = '';
         document.getElementById("height").value = '';
     }
-    removeBMI(target){
+    /* removeBMI(target){
         if(target.className === 'remove-BMI'){
             target.parentElement.parentElement.remove();
         }
-    }
+    } */
 }
 
 document.getElementById('form').addEventListener('submit', function(e){
@@ -58,7 +67,7 @@ document.getElementById('form').addEventListener('submit', function(e){
 document.querySelector('.display').addEventListener('click', function(e){
     const ui = new UI();
     
-    ui.removeBMI(e.target);
+    /* ui.removeBMI(e.target); */
 
     ui.clearFields();
 
