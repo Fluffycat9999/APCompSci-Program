@@ -25,7 +25,7 @@ html{
     margin: 0 auto;
     background-color: paleturquoise;
     color: white;
-    height: 20vh;
+    height: 15vh;
     font-size: 5rem;
     text-transform: uppercase;
 }
@@ -65,7 +65,7 @@ html{
     align-items: center;
     margin: 1rem;
     height: 10vh;
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 10rem;
     width: 100%;
 }
