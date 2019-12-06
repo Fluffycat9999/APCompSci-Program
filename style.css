@@ -1,5 +1,6 @@
 html{
     font-size: 62.5%;
+    background-color: pink;
 }
 
 *, *::after, *::before{
@@ -25,9 +26,13 @@ html{
     margin: 0 auto;
     background-color: paleturquoise;
     color: white;
-    height: 15vh;
+    height: 14vh;
     font-size: 5rem;
     text-transform: uppercase;
+}
+
+.header:hover{
+    transform: translateY(-.3rem);
 }
 
 .user-input{
